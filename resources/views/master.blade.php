@@ -13,11 +13,39 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+\
+<style>
+    #body{
+        background-color: beige;
+    }
+    .parent{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    }
+    .img-box{
+        height: 100px;
+    }
+
+    .img-boxes{
+        height: 500px;
+        margin-left:10%;
+    }
+    .search-box{
+        width:500px;
+    }
+</style>
+
+
 </head>
 <body>
     {{View::make('header')}}
     @yield('content')
     {{View::make('footer')}}
+
+
 
 </body>
 </html>
